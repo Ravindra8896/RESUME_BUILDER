@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        h1{
+            text-align: center;
+            background-color: antiquewhite;
+            font-style: italic;
+        }
+        .mainbody{
+            margin-left: 260px;
+            margin-right: 260px;
+            align-items: center;
+        }
+        .header {
+            height: 100px;
+            background-color: orange;
+            color: whitesmoke;
+            padding-bottom: 5px;
+            
+        }
+        .headleft{
+            float: left;
+        }
+        .headright{
+            float: right;
+            color: black;
+            padding-top: 7px;
+            padding-right: 10px;
+        }
+        .name{
+            font-size: 65px;
+            
+        }
+        .post{
+            font-size: 20px;
+            
+        }
+        
+        .column{
+            height: 900px;
+        }
+        #leftside{
+            height: 900px;
+            width: 325px;
+            background-color: rgb(207, 234, 245);
+            float: left;
+        }
+
+        #border{
+            height: 900px;
+            background-color: black;
+            width: 1px;
+            float: left;
+        }
+
+        #rightside{
+            height: 900px;
+            float: left;
+            margin-left: 5px;
+
+        }
+        .content{
+            height: 200px;
+            width: auto;
+            padding-left: 10px;
+        }
+        .content1{
+            height: 200px;
+            width: auto;
+            padding-left: 10px;
+        }
+        
+        .title{
+
+            font-size: 25px;
+            font-weight: 300;
+            border-bottom: 2px greenyellow solid;
+            padding-bottom: 3px;
+            padding-top: 5px;
+            
+        }
+        .con{
+            font-size: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="mainbody">
+        <h1>RESUME BUILDER TEMPLATE </h1>
+        <div class="header">
+            <div class="headleft">
+                <span class="name" CONTENTEDITABLE="TRUE">YOUR NAME</span><br>
+                <span CLASS="post" CONTENTEDITABLE="TRUE">YOUR JOB POST </span>
+            </div>
+            <div class="headright">
+                <span class="contact" contenteditable="true">+91-1234567890</span><br>
+                <span class="email" contenteditable="true">xyz@gmail.com</span><br>
+                <span class="linkedin" contenteditable="true">linkedn id</span><br>
+                <span class="location" contenteditable="true">indira nagar, lucknow</span><br>
+            </div>
+        </div>
+        <div class="B">          
+            <div class="cloumn" id="leftside">
+                <div class="content">
+                    <span class="title">EDUCATION QUALIFICATIONS</span>
+                    <div CLASS="QUALIFICATIONS"><span class="con" contenteditable="true">add your qualifications</span></div>
+                        <button id="add"type="button" onclick="addqua()">+ add</button>
+                        <button id="remove" type="button" onclick="movequa()">- remove</button>
+                    </div>
+                <div class="content">
+                    <span class="title">MY SKILLS</span>
+                    <div CLASS="SKILLS"><span class="con" contenteditable="true">add your skills</span></div>
+                        <button id="add"type="button" onclick="addskills()">+ add</button>
+                        <button id="remove" type="button" onclick="moveskills()">- remove</button>
+                    </div>
+                <div class="content">
+                    <span class="title">LANGUAGES</span>
+                    <div CLASS="lang"><span class="con" class="con" contenteditable="true">add your languages</span></div>
+                        <button id="add"type="button" onclick="addlang()">+ add</button>
+                        <button id="remove" type="button" onclick="movelang()">- remove</button>
+                </div>
+                <div class="content">
+                    <span class="title">ACHIEVEMENTS</span>
+                    <div CLASS="achieve"><span class="con" class="con" contenteditable="true">add your achievements</span></div>
+                        <button id="add"type="button" onclick="addachieve()">+ add</button>
+                        <button id="remove" type="button" onclick="moveachieve()">- remove</button>
+                </div>
+                
+            </div>
+            <!-- border in btw left and right column -->
+            <div class="cloumn" id="border"></div>
+
+            <div class="cloumn" id="rightside">
+                <div class="content1">
+                    <span class="title" >YOUR DEGREE</span>
+                    <div class="degree"><span class="con" contenteditable="true">add your degree</div>
+                        <button id="add"type="button" onclick="addhobb()">+ add</button>
+                        <button id="remove" type="button" onclick="movehobb()">- remove</button>
+                </div>
+                <div class="content1">
+                    <span class="title">INTERESTS/HOBBIES</span>
+                    <div CLASS="hobbies"><span class="con" contenteditable="true">add your interest/hobbies</span></div>
+                        <button id="add"type="button" onclick="addhobb()">+ add</button>
+                        <button id="remove" type="button" onclick="movehobb()">- remove</button>
+                </div>
+                <div class="content1">
+                    <span class="title" >REWARDS</span>
+                    <!-- function name addrew() and moverew()-->
+                    <div CLASS="reward"><span class="con" contenteditable="true">add your rewards</span></div>
+                        <button id="add"type="button" onclick="addrew()">+ add</button>
+                        <button id="remove" type="button" onclick="moverew()">- remove</button>
+                </div>
+                <div class="content1">
+                    <span class="title">OTHER SKILLS</span>
+                    <!-- function name addrew() and moverew()-->
+                    <div CLASS="otskills"><span class="con" contenteditable="true">add your other skills</span></div>
+                        <button id="add"type="button" onclick="addskills()">+ add</button>
+                        <button id="remove" type="button" onclick="moveskills()">- remove</button>
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
